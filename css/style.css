@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+html {
+  font-size: 62%; }
+  @media (max-width: 900px) {
+    html .actived {
+      display: block !important; }
+    html .menu-toggle {
+      display: none;
+      position: absolute;
+      top: 148px;
+      left: 0px; }
+      html .menu-toggle .menu {
+        flex-direction: column;
+        width: 500px;
+        height: 300px; }
+    html .menu-hidden {
+      width: 35px;
+      float: right;
+      transform: translate(-20px, 29px);
+      transition-duration: 1s; }
+      html .menu-hidden div {
+        width: 40px;
+        height: 5px;
+        background-color: #f7f3f3;
+        margin: 6px 0; }
+      html .menu-hidden .menu-icon-first {
+        transform: rotate(50deg) translate(8px, 8px);
+        transition-duration: 1s; }
+      html .menu-hidden .menu-icon-mid {
+        visibility: hidden;
+        transition-duration: 0s; }
+      html .menu-hidden .menu-icon-end {
+        transform: rotate(-50deg) translate(8px, -8px);
+        transition-duration: 1s; } }
+
+body {
+  display: block;
+  font-family: 'Khula', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  width: 100%;
+  height: 100%; }
+
+.particles-js-canvas-el {
+  position: fixed;
+  top: 0; }
+
+.wrapper {
+  background: url(../image/main_bg.jpg) no-repeat fixed center; }
+  .wrapper #particles-js .header {
+    background: url(../image/header_bg.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 1080px;
+    margin-top: -116px; }
+  .wrapper #particles-js .navigate-bar {
+    max-width: 1450px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0%;
+    z-index: 1000; }
+    .wrapper #particles-js .navigate-bar::after {
+      content: '';
+      clear: both;
+      display: table; }
+    .wrapper #particles-js .navigate-bar .logo-namePage {
+      min-width: 330px;
+      background-color: pink;
+      width: 38%;
+      display: inline-flex; }
+      .wrapper #particles-js .navigate-bar .logo-namePage .logo {
+        width: 20%;
+        min-width: 110.2px;
+        margin-right: 3%; }
+        .wrapper #particles-js .navigate-bar .logo-namePage .logo img {
+          width: 100%;
+          vertical-align: middle; }
+      .wrapper #particles-js .navigate-bar .logo-namePage .namePage {
+        width: 60%;
+        height: 100%; }
+        .wrapper #particles-js .navigate-bar .logo-namePage .namePage h2 {
+          height: 100%;
+          line-height: 4.8; }
+    .wrapper #particles-js .navigate-bar .navigate-right {
+      width: 62%; }
+      .wrapper #particles-js .navigate-bar .navigate-right .menu-toggle {
+        background-color: red;
+        height: 100%;
+        width: 100%;
+        float: left; }
+        .wrapper #particles-js .navigate-bar .navigate-right .menu-toggle .menu {
+          width: 100%;
+          height: 100%;
+          background-color: black;
+          list-style-type: none;
+          text-align: center;
+          display: inline-flex;
+          justify-content: space-around; }
+          .wrapper #particles-js .navigate-bar .navigate-right .menu-toggle .menu li {
+            height: 100%;
+            vertical-align: middle;
+            background-color: green; }
+            .wrapper #particles-js .navigate-bar .navigate-right .menu-toggle .menu li:last-child {
+              margin-right: 0; }
+            .wrapper #particles-js .navigate-bar .navigate-right .menu-toggle .menu li a {
+              line-height: 5.5;
+              text-transform: uppercase;
+              text-decoration: none;
+              font-size: 21px;
+              color: white; }
+  .wrapper .wrapper-section {
+    margin: 0 auto;
+    max-width: 1450px;
+    height: 100%; }
+    .wrapper .wrapper-section section {
+      width: 100%;
+      height: 400px; }
+    .wrapper .wrapper-section #one {
+      background-color: aqua; }
+    .wrapper .wrapper-section #two {
+      background-color: violet; }
+    .wrapper .wrapper-section #three {
+      background-color: gray; }
+    .wrapper .wrapper-section #four {
+      background-color: red; }

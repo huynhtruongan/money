@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="particles-js">
+        <div class="navigate-bar clear">
+          <div class="logo-namePage navigate">
+            <div class="logo"><img src="logo/logo.png" alt="logo" /></div>
+            <div class="namePage">
+              <h2>Takenomich</h2>
+            </div>
+          </div>
+          <div class="navigate navigate-right">
+            <nav class="menu-toggle">
+              <ul class="menu">
+                <li><a onclick="scroller()" href="#one">About us</a></li>
+                <li><a onclick="scroller()" href="#two">Takenomich</a></li>
+                <li><a href="#three">road map</a></li>
+                <li><a href="#four">our partner</a></li>
+                <li><a href="#five">Company</a></li>
+              </ul>
+            </nav>
+            <div class="menu-hidden">
+              <div class="first"></div>
+              <div class="mid"></div>
+              <div class="end"></div>
+            </div>
+          </div>
+        </div>
+        <div class="header">
+          <div class="sloggan">
+            <h2>metacorgi</h2>
+            <p>meta meta meta meta meeeeeeeeeeeeeeeeeta corgi!!!!!!!!!!!</p>
+          </div>
+        </div>
+        <div class="wrapper-section">
+          <section id="one"></section>
+          <section id="two"></section>
+          <section id="three"></section>
+          <section id="four"></section>
+        </div>
+      </div>
+    </div>
+
+    <script src="particles/particles.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/menu-toggle.js"></script>
+
+    <script>
+      /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+      particlesJS.load('particles-js', 'particles.json', function () {
+        console.log('callback - particles.js config loaded');
+      });
+    </script>
+  </body>
+</html>

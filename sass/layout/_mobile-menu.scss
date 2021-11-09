@@ -1,0 +1,17 @@
+@mixin respone-menu {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+@mixin respone($breakpoint) {
+  @if ($breakpoint==phone) {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if ($breakpoint==tab-port) {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+}
