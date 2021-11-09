@@ -1,13 +1,21 @@
 {
   "name": "webapp",
   "version": "1.0.0",
-  "description": "landing page webapp",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
-  "author": "An Dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huynhtruongan/money.git"
+  },
+  "author": "AnDev",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huynhtruongan/money/issues"
+  },
+  "homepage": "https://github.com/huynhtruongan/money#readme",
   "devDependencies": {
     "node-sass": "^6.0.1"
   }
